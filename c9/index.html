@@ -4,25 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>Whiskey Drop | Taste a new whiskey every month </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <article class="container">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="/" class="navbar-brand"> Whiskey Drop </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"> <a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item mr-2"> <a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"> <a class="nav-link" href="/login">Sign in / Sign up </a></li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
+            <a href="/login"> Sign in / Sign up </a>
+        </div>
+    </nav>
+    <article class="container mt-3">
+        <div class="row d-none d-sm-block">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong> Sale Now On! </strong> We've got a sale on. Get a 12-month subscription for the price of six!
+                    <a href="/"> See here for details! </a>
+                </div>
+            </div>
+        </div>
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1> The finest whiskeys delivered to your doorstep </h1>
                     <p class="lead"> Sign up free today to start receiving the world's best whiskeys every month.
-                        <s>£19.99</s> <strong><mark> First one is free </mark></strong></p>
+                        <s class="d-none d-sm-inline">£19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark> First one is free </mark></strong></p>
                     <button class="btn btn-success btn-lg"> Sign up! </button>
                     <p class="text-muted"><small> You must be 18 or over to sign up to our service. Please, drink responsibly. </small></p>
                 </section>
@@ -34,24 +54,38 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase"> Quotes: </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p> I've been introduced to more than 10 new whiskeys I'd never known about. </p>
-                        <p> - Jane Doe </p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="/images/girl-image.png" alt="girl-image" class="rounded-circle mr-3" height=100 width=100></img>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p> I've been introduced to more than 10 new whiskeys I'd never known about. </p>
+                                <p> - Jane Doe </p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p> I haven't been sober for months! </p>
-                        <p> - Jane Doe </p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="/images/guy-image.png" alt="guy-image" class="rounded-circle mr-3" height=100 width=100></img>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p> I haven't been sober for months! </p>
+                                <p> - Jane Doe </p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
         </section>
         <!-- /Quotes -->
         <hr>
@@ -59,31 +93,31 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase"> Features: </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3> Feature 1 </h3>
+                        <h3> <i class="fas fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success"> New! </span></h3>
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus labore blanditiis aliquam ipsam nisi voluptas, molestias dolorum voluptatem est asperiores, cum eveniet reiciendis accusantium iste molestiae facere
                             animi adipisci.</p>
-                        <p> <a class="btn btn-sm btn-light" href="#"> Read More</a></p>
+                        <p> <a class=" btn btn-sm btn-light " href="# "> Read More</a></p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3> Feature 2 </h3>
+                <div class="col-12 col-md-6 col-lg-4 ">
+                    <div class="feature ">
+                        <h3> <i class="fas fa-credit-card d-none d-sm-block"></i> Feature 2 </h3>
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto libero qui nostrum eaque pariatur ad, necessitatibus deleniti similique modi ipsum dolorem eligendi nesciunt, suscipit ratione enim, cupiditate laborum quae quibusdam!</p>
-                        <p> <a class="btn btn-sm btn-light" href="#"> Read More</a></p>
+                        <p> <a class="btn btn-sm btn-light " href="# "> Read More</a></p>
                     </div>
                 </div>
-                <div class="col-12 d-md-none d-lg-block col-lg-4">
-                    <div class="feature">
-                        <h3> Feature 3 </h3>
+                <div class="col-12 d-md-none d-lg-block col-lg-4 ">
+                    <div class="feature ">
+                        <h3> <i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3 </h3>
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquam non dolore, natus velit quas illo totam, maiores, laborum enim eum commodi voluptatibus obcaecati debitis quis qui saepe mollitia. Repudiandae?</p>
-                        <p> <a class="btn btn-sm btn-light" href="#"> Read More</a></p>
+                        <p> <a class="btn btn-sm btn-light " href="# "> Read More</a></p>
                     </div>
                 </div>
             </div>
@@ -91,46 +125,46 @@
         <!-- /Features -->
 
         <!-- Favourites -->
-        <section class="favourites">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-uppercase"> Favourites of the month: </h2>
+        <section class="favourites ">
+            <div class="row ">
+                <div class="col-12 my-5 ">
+                    <h2 class="text-uppercase "> Favourites of the month: </h2>
                     <p> See below for our top whiskeys this month and their country of origin </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <table class="table table-hover">
-                        <thead class="thead-dark">
+            <div class="row ">
+                <div class="col-12 ">
+                    <table class="table table-hover ">
+                        <thead class="thead-dark ">
                             <tr>
-                                <th scope="col"> </th>
-                                <th scope="col"> Name </th>
-                                <th scope="col"> Origin </th>
+                                <th scope="col "> </th>
+                                <th scope="col "> Name </th>
+                                <th scope="col "> Origin </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row ">1</th>
                                 <td>Auchentoshan Three Wood Single Malt Scotch Whisky</td>
                                 <td>Scotland</td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
+                                <th scope="row ">2</th>
                                 <td>The Balvenie Double Wood 12-year-old Single Malt Scotch</td>
                                 <td>Scotland</td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
+                                <th scope="row ">3</th>
                                 <td>Green Spot Single Pot Irish Still Whiskey</td>
                                 <td>Ireland</td>
                             </tr>
                             <tr>
-                                <th scope="row">4</th>
+                                <th scope="row ">4</th>
                                 <td>Old Forester Kentucky Straight Bourbon Whisky</td>
                                 <td>Kentucky, USA</td>
                             </tr>
                             <tr>
-                                <th scope="row">5</th>
+                                <th scope="row ">5</th>
                                 <td>Laphroaig 14-year-old 2001 Benchmark Single Malt</td>
                                 <td>Scotland</td>
                             </tr>
